@@ -14,7 +14,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseNpgsql
 
 
 builder.Services.AddScoped<ISoapService, SoapService>();
-builder.Services.AddSingleton<IAuthenticationService, BasicAuthenticationService>();
+builder.Services.AddScoped<IAuthenticationService, BasicAuthenticationService>();
+builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
 
 var app = builder.Build();
 

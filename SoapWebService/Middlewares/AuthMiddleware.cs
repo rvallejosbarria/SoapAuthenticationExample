@@ -6,15 +6,13 @@ namespace SoapWebService.Middlewares;
 public class AuthMiddleware
 {
   private readonly RequestDelegate _next;
-  private readonly IAuthenticationService _service;
 
-  public AuthMiddleware(RequestDelegate next, IAuthenticationService service)
+  public AuthMiddleware(RequestDelegate next)
   {
     _next = next;
-    _service = service;
   }
 
-  public async Task InvokeAsync(HttpContext httpContext)
+  public async Task InvokeAsync(HttpContext httpContext, IAuthenticationService service)
   {
     if (!httpContext.Request.Headers.ContainsKey("Authorization"))
     {
@@ -30,7 +28,7 @@ public class AuthMiddleware
     var uid = uidpwd[0];
     var password = uidpwd[1];
 
-    if (!_service.Authenticate(uid, password))
+    if (!service.Authenticate(uid, password))
     {
       httpContext.Response.StatusCode = 401;
       await httpContext.Response.WriteAsync("Unauthorized");
