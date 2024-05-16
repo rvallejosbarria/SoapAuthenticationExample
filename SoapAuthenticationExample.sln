@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUtilitiesLib", "CoreUtilitiesLib\CoreUtilitiesLib.csproj", "{77011295-D9C7-47C7-ACD0-665DDD254DCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapWebService", "SoapWebService\SoapWebService.csproj", "{75300BA4-5D83-43B3-9922-EDAF832A2C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPI", "RestAPI\RestAPI.csproj", "{33025DFF-EA68-4A07-A42F-67AF5658D64C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77011295-D9C7-47C7-ACD0-665DDD254DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77011295-D9C7-47C7-ACD0-665DDD254DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77011295-D9C7-47C7-ACD0-665DDD254DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77011295-D9C7-47C7-ACD0-665DDD254DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75300BA4-5D83-43B3-9922-EDAF832A2C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75300BA4-5D83-43B3-9922-EDAF832A2C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75300BA4-5D83-43B3-9922-EDAF832A2C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75300BA4-5D83-43B3-9922-EDAF832A2C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33025DFF-EA68-4A07-A42F-67AF5658D64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33025DFF-EA68-4A07-A42F-67AF5658D64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33025DFF-EA68-4A07-A42F-67AF5658D64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33025DFF-EA68-4A07-A42F-67AF5658D64C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
